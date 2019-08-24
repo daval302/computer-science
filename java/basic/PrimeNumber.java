@@ -1,5 +1,3 @@
-package basic;
-
 public class PrimeNumber {
     static boolean isPrime(int num){
         // assert that num is greater then or equal 0
@@ -15,6 +13,7 @@ public class PrimeNumber {
     }
 
     public static void main(String[] args) {
-        System.out.println( isPrime( 6 ) );
+        System.out.println( isPrime( 6 ) ); // false
+        System.out.println( isPrime( 19 ) ); // true
     }
 }

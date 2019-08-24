@@ -1,8 +1,6 @@
-package basic;
-
 public class BinarySearch {
 
-    static int search(int [] array, int target){
+    static int searchNotRecursive(int [] array, int target){
         // assume array is sorted and not queal null
         int i = 0; int j = array.length -1 ;
         while (i<=j){
@@ -31,11 +29,11 @@ public class BinarySearch {
     }
 
 
-    static int searchv2(int [] array, int target){
+    static int search(int [] array, int target){
         return searchRecursive(array, 0, array.length -1, target);
     }
 
     public static void main(String[] args) {
-        System.out.println( searchv2( new int[]{1,2,3,4,5,6}, 3 ) );
+        System.out.println( search( new int[]{1,2,3,4,5,6}, 3 ) ); // 2
     }
 }

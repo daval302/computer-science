@@ -98,11 +98,11 @@ public class BinarySerachTree {
         tree.put( 5, "aitch" );
         tree.put( 6, "zed" );
         
-        System.out.println("Original node wiht key 2: " + tree.get(2));
+        System.out.println("Original node wiht key 2: " + tree.get(2)); // key 2: eff
         
         tree.put(2, "eye updated" );
 
-        System.out.println("Modified node wiht key 2: " + tree.get(2));
+        System.out.println("Modified node wiht key 2: " + tree.get(2)); // key 2: eye updated
     }
 
 }

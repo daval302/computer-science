@@ -67,6 +67,7 @@ class MergeSort{
 
         sort(A, 0, A.length - 1);
 
+        // 2 3 4 5 7 
         System.out.println(
             Arrays.toString(A)
         );

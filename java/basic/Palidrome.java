@@ -1,8 +1,3 @@
-package basic;
-
-import java.util.Arrays;
-import java.util.Iterator;
-
 public class Palidrome {
 
     /*
@@ -90,6 +85,6 @@ public class Palidrome {
 
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome( 454 ));
+        System.out.println(isPalindrome( 454 )); // true
     }
 }

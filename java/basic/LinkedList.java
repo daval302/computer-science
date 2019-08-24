@@ -1,9 +1,7 @@
-package basic;
-
 public class LinkedList {
     private Node head;
 
-    Node insert(Node node){
+    Node insertNotRecursive(Node node){
         if (head == null) {
             head = node;
         } else {
@@ -46,11 +44,11 @@ public class LinkedList {
         return lenghtRecursive(head);
     }
 
-    Node insertv2(Node node){
+    Node insert(Node node){
         return insertRecursive(head, node);
     }
 
-    void printv2(){
+    void print(){
         printRecursive(head);
     }
 
@@ -110,7 +108,7 @@ public class LinkedList {
         return false;
     }
 
-    void print(){
+    void printNotRecursive(){
         Node current = head;
         while (current != null) {
             System.out.println(current.getData());
@@ -122,17 +120,17 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
-        list.insert(new Node(1));
-        list.insert(new Node(1));
-        list.insert(new Node(2));
-        list.insertv2(new Node(5));
-        list.insertv2(new Node(10));
+        list.insertNotRecursive(new Node(1));
+        list.insertNotRecursive(new Node(1));
+        list.insertNotRecursive(new Node(2));
+        list.insert(new Node(5));
+        list.insert(new Node(10));
 
         list.deleteByKey(1);
         list.deleteByKey(5);
 
-        list.printv2();
-        System.out.println("Lenght : " + list.length());
+        list.print(); // 1 2 10
+        System.out.println("Lenght : " + list.length()); // 3
     }
 }
 
